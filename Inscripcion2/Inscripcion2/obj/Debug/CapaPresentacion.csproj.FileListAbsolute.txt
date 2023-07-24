@@ -1,0 +1,17 @@
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\Inscripcion2.exe.config
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\Inscripcion2.exe
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\Inscripcion2.pdb
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaNegocio.dll
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaNegocio.pdb
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.Properties.Resources.resources
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.exe
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.pdb
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos.mdf
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos_log.ldf
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos.dll
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos.pdb
