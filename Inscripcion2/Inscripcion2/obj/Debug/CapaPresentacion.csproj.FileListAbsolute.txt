@@ -15,3 +15,7 @@ C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\De
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos_log.ldf
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos.dll
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\bin\Debug\CapaDatos.pdb
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\inscripcion.FTutor.resources
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Sistema_de_inscripcion.FMenu.resources
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FEstudiante.resources
+C:\Users\MT\workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FUsuario.resources
