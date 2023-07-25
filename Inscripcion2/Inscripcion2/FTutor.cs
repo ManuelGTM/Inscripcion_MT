@@ -47,7 +47,9 @@ namespace inscripcion
 
         private void FTutor_Load(object sender, EventArgs e)
         {
-
+            Program.nuevo = false;
+            Program.modificar = false;
+            HabilitaBotones();
         }
 
         private void FTutor_FormClosing(object sender, FormClosingEventArgs e)
@@ -74,6 +76,7 @@ namespace inscripcion
             tbApellido.Clear();
             tbCedula.Clear();
             tbTelefono.Clear();
+            tbDireccion.Clear();
             CbEstado.SelectedItem = 0;
         }
 
@@ -84,6 +87,7 @@ namespace inscripcion
             tbApellido.Enabled = valor;
             tbCedula.Enabled = valor;
             tbTelefono.Enabled = valor;
+            tbDireccion.Enabled = valor;
             CbEstado.Enabled = valor;
 
             if (Program.nuevo)
@@ -118,9 +122,10 @@ namespace inscripcion
                 tbIdTutor.Text = row["IdTutor"].ToString();
                 tbNombre.Text = row["Nombre"].ToString();
                 tbApellido.Text = row["Apellidos"].ToString();
-                tbTelefono.Text = row["Telefono"].ToString();
                 tbCedula.Text = row["Cedula"].ToString();
-                tbDireccion.Text = row["Estado"].ToString();
+                tbTelefono.Text = row["Telefono"].ToString();
+                tbDireccion.Text = row["Direccion"].ToString();
+                CbEstado.Text = row["Estado"].ToString();
             }
         }
 
@@ -170,7 +175,25 @@ namespace inscripcion
                     {
                         MessageBox.Show("Debe seleccionar el estado del Tutor");
                         CbEstado.Focus();
-                    }
+            }
+            else
+            {
+                if (Program.nuevo)
+                {
+                    mensaje = CNTutor.InsertarTutor(tbNombre.Text, tbApellido.Text, tbCedula.Text, tbTelefono.Text, tbDireccion.Text, CbEstado.Text);
+                    MessageBox.Show("Los datos han sido insertados");
+                }
+                else
+                {
+                    mensaje = CNTutor.ActualizarTutor(Program.vidTutor,tbNombre.Text, tbApellido.Text, tbCedula.Text, tbTelefono.Text, tbDireccion.Text, CbEstado.Text);
+                    MessageBox.Show("Los datos han sido actualizados");
+                }
+                
+                Program.nuevo = false;
+                Program.modificar = false;
+                HabilitaBotones();
+                LimpiaObjetos();
+            }
         }
 
         private void BCancelar_Click(object sender, EventArgs e)

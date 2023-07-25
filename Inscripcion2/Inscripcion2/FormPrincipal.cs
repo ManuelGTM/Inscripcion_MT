@@ -114,5 +114,10 @@ namespace Sistema_de_inscripcion
         {
            
         }
+
+        private void procesoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
