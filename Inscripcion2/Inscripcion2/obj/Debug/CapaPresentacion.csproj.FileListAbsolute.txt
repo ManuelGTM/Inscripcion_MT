@@ -41,3 +41,6 @@ C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj
 C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.exe
 C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.pdb
 C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FBusquedaEstudiante.resources
+C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FBusquedaTutor.resources
+C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FConsultaTutor.resources
+C:\Users\rapto\Workbench\Miproyecto\Inscripcion_MT\Inscripcion2\Inscripcion2\obj\Debug\Inscripcion2.FConsultaEstudiante.resources

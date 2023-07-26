@@ -119,5 +119,17 @@ namespace Sistema_de_inscripcion
         {
 
         }
+
+        private void datosGeneralesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FConsultaTutor fCTutor = new FConsultaTutor();
+            fCTutor.ShowDialog();
+        }
+
+        private void datosGeneralesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FConsultaEstudiante fCEstudiante = new FConsultaEstudiante();
+            fCEstudiante.ShowDialog();
+        }
     }
 }

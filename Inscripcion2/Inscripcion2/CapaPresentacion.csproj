@@ -57,6 +57,24 @@
     <Compile Include="FBusquedaEstudiante.Designer.cs">
       <DependentUpon>FBusquedaEstudiante.cs</DependentUpon>
     </Compile>
+    <Compile Include="FBusquedaTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaTutor.Designer.cs">
+      <DependentUpon>FBusquedaTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaEstudiante.Designer.cs">
+      <DependentUpon>FConsultaEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaTutor.Designer.cs">
+      <DependentUpon>FConsultaTutor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +103,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FBusquedaEstudiante.resx">
       <DependentUpon>FBusquedaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBusquedaTutor.resx">
+      <DependentUpon>FBusquedaTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaEstudiante.resx">
+      <DependentUpon>FConsultaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaTutor.resx">
+      <DependentUpon>FConsultaTutor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FEstudiante.resx">
       <DependentUpon>FEstudiante.cs</DependentUpon>

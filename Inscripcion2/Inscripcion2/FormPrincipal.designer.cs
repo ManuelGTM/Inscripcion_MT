@@ -40,24 +40,10 @@
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estudianteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.datosGeneralesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porPeriodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porcursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porEmpleadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.empleadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosGeneralesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.porCargoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porCiudadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.datosGeneralesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.porEstudianteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porCiudadToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosGeneralesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.porNivelDeAccesoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosGeneralesToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.porGradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.porEmpleadoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.inscripcionToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.datosGeneralesToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -115,7 +101,7 @@
             // estudianteToolStripMenuItem
             // 
             this.estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
-            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.estudianteToolStripMenuItem.Text = "&Estudiante";
             this.estudianteToolStripMenuItem.ToolTipText = "Crear, modificar los datos del estudiante";
             this.estudianteToolStripMenuItem.Click += new System.EventHandler(this.estudianteToolStripMenuItem_Click);
@@ -123,7 +109,7 @@
             // tutorToolStripMenuItem
             // 
             this.tutorToolStripMenuItem.Name = "tutorToolStripMenuItem";
-            this.tutorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tutorToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.tutorToolStripMenuItem.Text = "&Tutor";
             this.tutorToolStripMenuItem.ToolTipText = "Crear, modificar los datos del Tutor";
             this.tutorToolStripMenuItem.Click += new System.EventHandler(this.tutorToolStripMenuItem_Click);
@@ -131,7 +117,7 @@
             // periodoToolStripMenuItem
             // 
             this.periodoToolStripMenuItem.Name = "periodoToolStripMenuItem";
-            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.periodoToolStripMenuItem.Text = "&Usuario";
             this.periodoToolStripMenuItem.ToolTipText = "Crear, modificar los datos del Usuario";
             this.periodoToolStripMenuItem.Click += new System.EventHandler(this.periodoToolStripMenuItem_Click);
@@ -148,7 +134,7 @@
             // inscripcionToolStripMenuItem
             // 
             this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
-            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.inscripcionToolStripMenuItem.Text = "&Inscripcion";
             this.inscripcionToolStripMenuItem.ToolTipText = "Realizar el proceso de inscripcion";
             this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.inscripcionToolStripMenuItem_Click);
@@ -157,10 +143,8 @@
             // 
             this.consultaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.estudianteToolStripMenuItem1,
-            this.empleadoToolStripMenuItem1,
             this.toolStripMenuItem3,
             this.usuarioToolStripMenuItem,
-            this.cursoToolStripMenuItem,
             this.toolStripSeparator1,
             this.inscripcionToolStripMenuItem1});
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
@@ -171,82 +155,25 @@
             // estudianteToolStripMenuItem1
             // 
             this.estudianteToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosGeneralesToolStripMenuItem,
-            this.porPeriodoToolStripMenuItem,
-            this.porcursoToolStripMenuItem,
-            this.porEmpleadoToolStripMenuItem});
+            this.datosGeneralesToolStripMenuItem});
             this.estudianteToolStripMenuItem1.Name = "estudianteToolStripMenuItem1";
-            this.estudianteToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.estudianteToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.estudianteToolStripMenuItem1.Text = "&Estudiante";
             // 
             // datosGeneralesToolStripMenuItem
             // 
             this.datosGeneralesToolStripMenuItem.Name = "datosGeneralesToolStripMenuItem";
-            this.datosGeneralesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.datosGeneralesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.datosGeneralesToolStripMenuItem.Text = "&Datos generales ";
             this.datosGeneralesToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos generales del estudiante ";
-            // 
-            // porPeriodoToolStripMenuItem
-            // 
-            this.porPeriodoToolStripMenuItem.Name = "porPeriodoToolStripMenuItem";
-            this.porPeriodoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.porPeriodoToolStripMenuItem.Text = "Por &Periodo";
-            this.porPeriodoToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del estudiante por periodo";
-            this.porPeriodoToolStripMenuItem.Click += new System.EventHandler(this.porPeriodoToolStripMenuItem_Click);
-            // 
-            // porcursoToolStripMenuItem
-            // 
-            this.porcursoToolStripMenuItem.Name = "porcursoToolStripMenuItem";
-            this.porcursoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.porcursoToolStripMenuItem.Text = "Por &Curso";
-            this.porcursoToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del estudiante por Curso";
-            // 
-            // porEmpleadoToolStripMenuItem
-            // 
-            this.porEmpleadoToolStripMenuItem.Name = "porEmpleadoToolStripMenuItem";
-            this.porEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.porEmpleadoToolStripMenuItem.Text = "Por &Empleado";
-            this.porEmpleadoToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del estudiante por Empleado";
-            // 
-            // empleadoToolStripMenuItem1
-            // 
-            this.empleadoToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosGeneralesToolStripMenuItem1,
-            this.porCargoToolStripMenuItem,
-            this.porCiudadToolStripMenuItem});
-            this.empleadoToolStripMenuItem1.Name = "empleadoToolStripMenuItem1";
-            this.empleadoToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
-            this.empleadoToolStripMenuItem1.Text = "&Empleado";
-            // 
-            // datosGeneralesToolStripMenuItem1
-            // 
-            this.datosGeneralesToolStripMenuItem1.Name = "datosGeneralesToolStripMenuItem1";
-            this.datosGeneralesToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
-            this.datosGeneralesToolStripMenuItem1.Text = "Datos &Generales";
-            this.datosGeneralesToolStripMenuItem1.ToolTipText = "Vizualizar e imprimir los datos generales del empleado\r\n\r\n";
-            // 
-            // porCargoToolStripMenuItem
-            // 
-            this.porCargoToolStripMenuItem.Name = "porCargoToolStripMenuItem";
-            this.porCargoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.porCargoToolStripMenuItem.Text = "Por &Cargo";
-            this.porCargoToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del empleado por cargo";
-            // 
-            // porCiudadToolStripMenuItem
-            // 
-            this.porCiudadToolStripMenuItem.Name = "porCiudadToolStripMenuItem";
-            this.porCiudadToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.porCiudadToolStripMenuItem.Text = "Por &Ciudad";
-            this.porCiudadToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del empleado por ciudad\r\n";
+            this.datosGeneralesToolStripMenuItem.Click += new System.EventHandler(this.datosGeneralesToolStripMenuItem_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosGeneralesToolStripMenuItem2,
-            this.porEstudianteToolStripMenuItem,
-            this.porCiudadToolStripMenuItem1});
+            this.datosGeneralesToolStripMenuItem2});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "&Tutor";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -256,76 +183,27 @@
             this.datosGeneralesToolStripMenuItem2.Size = new System.Drawing.Size(158, 22);
             this.datosGeneralesToolStripMenuItem2.Text = "Datos &Generales";
             this.datosGeneralesToolStripMenuItem2.ToolTipText = "Vizualizar e imprimir los datos generales del tutor";
-            // 
-            // porEstudianteToolStripMenuItem
-            // 
-            this.porEstudianteToolStripMenuItem.Name = "porEstudianteToolStripMenuItem";
-            this.porEstudianteToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.porEstudianteToolStripMenuItem.Text = "Por &Estudiante";
-            this.porEstudianteToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del tutor por estudiante";
-            // 
-            // porCiudadToolStripMenuItem1
-            // 
-            this.porCiudadToolStripMenuItem1.Name = "porCiudadToolStripMenuItem1";
-            this.porCiudadToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
-            this.porCiudadToolStripMenuItem1.Text = "Por &Ciudad";
-            this.porCiudadToolStripMenuItem1.ToolTipText = "Vizualizar e imprimir los datos del tutor por ciudad";
+            this.datosGeneralesToolStripMenuItem2.Click += new System.EventHandler(this.datosGeneralesToolStripMenuItem2_Click);
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosGeneralesToolStripMenuItem3,
-            this.porNivelDeAccesoToolStripMenuItem});
+            this.datosGeneralesToolStripMenuItem3});
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuarioToolStripMenuItem.Text = "&Usuario";
             // 
             // datosGeneralesToolStripMenuItem3
             // 
             this.datosGeneralesToolStripMenuItem3.Name = "datosGeneralesToolStripMenuItem3";
-            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(179, 22);
+            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(161, 22);
             this.datosGeneralesToolStripMenuItem3.Text = "Datos &Generales ";
             this.datosGeneralesToolStripMenuItem3.ToolTipText = "Vizualizar e imprimir los datos generales del usuario";
-            // 
-            // porNivelDeAccesoToolStripMenuItem
-            // 
-            this.porNivelDeAccesoToolStripMenuItem.Name = "porNivelDeAccesoToolStripMenuItem";
-            this.porNivelDeAccesoToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.porNivelDeAccesoToolStripMenuItem.Text = "Por &Nivel de Acceso";
-            this.porNivelDeAccesoToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos del usuario por nivel de acceso\r\n";
-            // 
-            // cursoToolStripMenuItem
-            // 
-            this.cursoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosGeneralesToolStripMenuItem4,
-            this.porGradoToolStripMenuItem,
-            this.porEmpleadoToolStripMenuItem1});
-            this.cursoToolStripMenuItem.Name = "cursoToolStripMenuItem";
-            this.cursoToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.cursoToolStripMenuItem.Text = "&Curso";
-            // 
-            // datosGeneralesToolStripMenuItem4
-            // 
-            this.datosGeneralesToolStripMenuItem4.Name = "datosGeneralesToolStripMenuItem4";
-            this.datosGeneralesToolStripMenuItem4.Size = new System.Drawing.Size(158, 22);
-            this.datosGeneralesToolStripMenuItem4.Text = "Datos &Generales";
-            // 
-            // porGradoToolStripMenuItem
-            // 
-            this.porGradoToolStripMenuItem.Name = "porGradoToolStripMenuItem";
-            this.porGradoToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.porGradoToolStripMenuItem.Text = "Por &Grado";
-            // 
-            // porEmpleadoToolStripMenuItem1
-            // 
-            this.porEmpleadoToolStripMenuItem1.Name = "porEmpleadoToolStripMenuItem1";
-            this.porEmpleadoToolStripMenuItem1.Size = new System.Drawing.Size(158, 22);
-            this.porEmpleadoToolStripMenuItem1.Text = "Por &Empleado";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(129, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // inscripcionToolStripMenuItem1
             // 
@@ -335,7 +213,7 @@
             this.porEstudianteToolStripMenuItem1,
             this.porEmpleadoToolStripMenuItem2});
             this.inscripcionToolStripMenuItem1.Name = "inscripcionToolStripMenuItem1";
-            this.inscripcionToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.inscripcionToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.inscripcionToolStripMenuItem1.Text = "&Inscripcion";
             this.inscripcionToolStripMenuItem1.Click += new System.EventHandler(this.inscripcionToolStripMenuItem1_Click);
             // 
@@ -556,25 +434,11 @@
         private System.Windows.Forms.ToolStripMenuItem salidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem inscripcionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem estudianteToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem empleadoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem datosGeneralesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porPeriodoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cursoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porcursoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porEmpleadoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem datosGeneralesToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem porCargoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porCiudadToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem datosGeneralesToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem porEstudianteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porCiudadToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem datosGeneralesToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem porNivelDeAccesoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem datosGeneralesToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem porGradoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem porEmpleadoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;

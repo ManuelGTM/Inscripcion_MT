@@ -96,8 +96,8 @@ namespace inscripcion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //FBuscarDepartamento fBuscarDepto = new FBuscarDepartamento();
-            //fBuscarDepto.ShowDialog();
+            FBusquedaTutor fBuscarTutor = new FBusquedaTutor();
+            fBuscarTutor.ShowDialog();
             if (Program.modificar)
             {
                 RecuperaDatos();
