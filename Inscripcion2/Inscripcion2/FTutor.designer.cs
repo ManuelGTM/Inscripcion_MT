@@ -52,17 +52,20 @@
             this.BSalir = new System.Windows.Forms.Button();
             this.CbEstado = new System.Windows.Forms.ComboBox();
             this.BBuscar = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(0, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1198, 101);
+            this.panel1.Size = new System.Drawing.Size(1198, 112);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -70,7 +73,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(411, 34);
+            this.label8.Location = new System.Drawing.Point(380, 50);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.MinimumSize = new System.Drawing.Size(180, 40);
             this.label8.Name = "label8";
@@ -81,39 +84,39 @@
             // 
             // tbCedula
             // 
-            this.tbCedula.Location = new System.Drawing.Point(150, 369);
+            this.tbCedula.Location = new System.Drawing.Point(216, 379);
             this.tbCedula.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbCedula.Name = "tbCedula";
-            this.tbCedula.Size = new System.Drawing.Size(363, 25);
+            this.tbCedula.Size = new System.Drawing.Size(290, 25);
             this.tbCedula.TabIndex = 2;
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(150, 241);
+            this.tbNombre.Location = new System.Drawing.Point(216, 251);
             this.tbNombre.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(363, 25);
+            this.tbNombre.Size = new System.Drawing.Size(290, 25);
             this.tbNombre.TabIndex = 3;
             // 
             // tbApellido
             // 
-            this.tbApellido.Location = new System.Drawing.Point(150, 301);
+            this.tbApellido.Location = new System.Drawing.Point(216, 311);
             this.tbApellido.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.Size = new System.Drawing.Size(363, 25);
+            this.tbApellido.Size = new System.Drawing.Size(290, 25);
             this.tbApellido.TabIndex = 4;
             // 
             // tbTelefono
             // 
-            this.tbTelefono.Location = new System.Drawing.Point(150, 418);
+            this.tbTelefono.Location = new System.Drawing.Point(216, 428);
             this.tbTelefono.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.Size = new System.Drawing.Size(363, 25);
+            this.tbTelefono.Size = new System.Drawing.Size(290, 25);
             this.tbTelefono.TabIndex = 5;
             // 
             // tbIdTutor
             // 
-            this.tbIdTutor.Location = new System.Drawing.Point(150, 197);
+            this.tbIdTutor.Location = new System.Drawing.Point(216, 199);
             this.tbIdTutor.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbIdTutor.Name = "tbIdTutor";
             this.tbIdTutor.Size = new System.Drawing.Size(109, 25);
@@ -121,7 +124,7 @@
             // 
             // tbDireccion
             // 
-            this.tbDireccion.Location = new System.Drawing.Point(798, 189);
+            this.tbDireccion.Location = new System.Drawing.Point(684, 248);
             this.tbDireccion.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.tbDireccion.Multiline = true;
             this.tbDireccion.Name = "tbDireccion";
@@ -135,7 +138,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(52, 241);
+            this.label1.Location = new System.Drawing.Point(118, 251);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 18);
@@ -148,7 +151,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(52, 196);
+            this.label2.Location = new System.Drawing.Point(118, 198);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 18);
@@ -160,7 +163,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(705, 279);
+            this.label3.Location = new System.Drawing.Point(591, 338);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 18);
@@ -172,7 +175,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(705, 197);
+            this.label4.Location = new System.Drawing.Point(591, 256);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 18);
@@ -186,7 +189,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(52, 428);
+            this.label5.Location = new System.Drawing.Point(118, 438);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 18);
@@ -199,7 +202,7 @@
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(52, 369);
+            this.label6.Location = new System.Drawing.Point(118, 379);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 18);
@@ -212,7 +215,7 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(52, 304);
+            this.label7.Location = new System.Drawing.Point(118, 314);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 18);
@@ -222,105 +225,112 @@
             // BCancelar
             // 
             this.BCancelar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BCancelar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BCancelar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BCancelar.FlatAppearance.BorderSize = 2;
             this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BCancelar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCancelar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BCancelar.Location = new System.Drawing.Point(629, 4);
             this.BCancelar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BCancelar.Name = "BCancelar";
             this.BCancelar.Size = new System.Drawing.Size(146, 48);
             this.BCancelar.TabIndex = 20;
             this.BCancelar.Text = "Cancelar";
-            this.BCancelar.UseVisualStyleBackColor = true;
+            this.BCancelar.UseVisualStyleBackColor = false;
             this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BImprimir
             // 
             this.BImprimir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BImprimir.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BImprimir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.BImprimir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BImprimir.FlatAppearance.BorderSize = 2;
             this.BImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BImprimir.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BImprimir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BImprimir.Location = new System.Drawing.Point(473, 4);
             this.BImprimir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BImprimir.Name = "BImprimir";
             this.BImprimir.Size = new System.Drawing.Size(146, 48);
             this.BImprimir.TabIndex = 19;
             this.BImprimir.Text = "Imprimir";
-            this.BImprimir.UseVisualStyleBackColor = true;
+            this.BImprimir.UseVisualStyleBackColor = false;
             // 
             // BEditar
             // 
             this.BEditar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BEditar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BEditar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BEditar.FlatAppearance.BorderSize = 2;
             this.BEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BEditar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BEditar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BEditar.Location = new System.Drawing.Point(317, 4);
             this.BEditar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BEditar.Name = "BEditar";
             this.BEditar.Size = new System.Drawing.Size(146, 48);
             this.BEditar.TabIndex = 18;
             this.BEditar.Text = "Editar";
-            this.BEditar.UseVisualStyleBackColor = true;
+            this.BEditar.UseVisualStyleBackColor = false;
             this.BEditar.Click += new System.EventHandler(this.BEditar_Click);
             // 
             // BGuardar
             // 
             this.BGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BGuardar.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BGuardar.FlatAppearance.BorderSize = 2;
             this.BGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BGuardar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BGuardar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BGuardar.Location = new System.Drawing.Point(161, 4);
             this.BGuardar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BGuardar.Name = "BGuardar";
             this.BGuardar.Size = new System.Drawing.Size(146, 48);
             this.BGuardar.TabIndex = 17;
             this.BGuardar.Text = "Guardar";
-            this.BGuardar.UseVisualStyleBackColor = true;
+            this.BGuardar.UseVisualStyleBackColor = false;
             this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
             // BNuevo
             // 
+            this.BNuevo.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BNuevo.FlatAppearance.BorderSize = 2;
             this.BNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BNuevo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BNuevo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BNuevo.Location = new System.Drawing.Point(5, 4);
             this.BNuevo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BNuevo.Name = "BNuevo";
             this.BNuevo.Size = new System.Drawing.Size(146, 48);
             this.BNuevo.TabIndex = 16;
             this.BNuevo.Text = "Nuevo";
-            this.BNuevo.UseVisualStyleBackColor = true;
+            this.BNuevo.UseVisualStyleBackColor = false;
             this.BNuevo.Click += new System.EventHandler(this.BNuevo_Click);
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.flowLayoutPanel1.Controls.Add(this.BNuevo);
             this.flowLayoutPanel1.Controls.Add(this.BGuardar);
             this.flowLayoutPanel1.Controls.Add(this.BEditar);
             this.flowLayoutPanel1.Controls.Add(this.BImprimir);
             this.flowLayoutPanel1.Controls.Add(this.BCancelar);
             this.flowLayoutPanel1.Controls.Add(this.BSalir);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(108, 520);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(55, 41);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(957, 64);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(938, 64);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // BSalir
             // 
             this.BSalir.AllowDrop = true;
             this.BSalir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BSalir.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BSalir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BSalir.FlatAppearance.BorderSize = 2;
             this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BSalir.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BSalir.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BSalir.Location = new System.Drawing.Point(785, 4);
             this.BSalir.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BSalir.Name = "BSalir";
@@ -328,7 +338,7 @@
             this.BSalir.TabIndex = 21;
             this.BSalir.TabStop = false;
             this.BSalir.Text = "Salir";
-            this.BSalir.UseVisualStyleBackColor = true;
+            this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.button6_Click);
             // 
             // CbEstado
@@ -339,7 +349,7 @@
             this.CbEstado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.CbEstado.Location = new System.Drawing.Point(798, 271);
+            this.CbEstado.Location = new System.Drawing.Point(684, 330);
             this.CbEstado.Name = "CbEstado";
             this.CbEstado.Size = new System.Drawing.Size(230, 26);
             this.CbEstado.TabIndex = 16;
@@ -352,7 +362,7 @@
             this.BBuscar.FlatAppearance.BorderSize = 2;
             this.BBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BBuscar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BBuscar.Location = new System.Drawing.Point(281, 194);
+            this.BBuscar.Location = new System.Drawing.Point(347, 196);
             this.BBuscar.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.BBuscar.Name = "BBuscar";
             this.BBuscar.Size = new System.Drawing.Size(64, 31);
@@ -362,12 +372,21 @@
             this.BBuscar.UseVisualStyleBackColor = true;
             this.BBuscar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Location = new System.Drawing.Point(0, 505);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1040, 118);
+            this.panel2.TabIndex = 23;
+            // 
             // FTutor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1201, 623);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(1040, 623);
             this.Controls.Add(this.BBuscar);
             this.Controls.Add(this.CbEstado);
             this.Controls.Add(this.label7);
@@ -383,8 +402,8 @@
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.tbCedula);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -399,6 +418,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,5 +450,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox CbEstado;
         private System.Windows.Forms.Button BBuscar;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -11,7 +11,7 @@ namespace Inscripcion2
     public static class Program
     {
         public static int vidEstudiante = 0;
-        public static int vidEmpleado = 0;
+        public static int vidUsuario = 0;
         public static int vidTutor = 0;
         public static bool nuevo = false;
         public static bool modificar = false;
