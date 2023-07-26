@@ -149,8 +149,8 @@ namespace Inscripcion2
 
         private void BBuscar_Click(object sender, EventArgs e)
         {
-            //FBuscarDepartamento fBuscarDepto = new FBuscarDepartamento();
-            //fBuscarDepto.ShowDialog();
+            FBusquedaEstudiante fBuscarEstudiante = new FBusquedaEstudiante();
+            fBuscarEstudiante.ShowDialog();
             if (Program.modificar)
             {
                 RecuperaDatos();

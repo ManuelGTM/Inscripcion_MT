@@ -46,6 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaDatosDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CapaDatosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FBusquedaEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusquedaEstudiante.Designer.cs">
+      <DependentUpon>FBusquedaEstudiante.cs</DependentUpon>
+    </Compile>
     <Compile Include="FEstudiante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FBusquedaEstudiante.resx">
+      <DependentUpon>FBusquedaEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FEstudiante.resx">
       <DependentUpon>FEstudiante.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +107,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="CapaDatosDataSet.xsc">
+      <DependentUpon>CapaDatosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CapaDatosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CapaDatosDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CapaDatosDataSet.xss">
+      <DependentUpon>CapaDatosDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
