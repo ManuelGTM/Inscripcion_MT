@@ -339,13 +339,14 @@
             // tbSexo
             // 
             this.tbSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.tbSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSexo.FormattingEnabled = true;
             this.tbSexo.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
             this.tbSexo.Location = new System.Drawing.Point(587, 193);
             this.tbSexo.Name = "tbSexo";
-            this.tbSexo.Size = new System.Drawing.Size(130, 21);
+            this.tbSexo.Size = new System.Drawing.Size(130, 28);
             this.tbSexo.TabIndex = 54;
             this.tbSexo.SelectedIndexChanged += new System.EventHandler(this.tbSexo_SelectedIndexChanged);
             // 

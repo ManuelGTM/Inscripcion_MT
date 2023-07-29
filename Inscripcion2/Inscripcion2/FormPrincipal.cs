@@ -131,5 +131,12 @@ namespace Sistema_de_inscripcion
             FConsultaEstudiante fCEstudiante = new FConsultaEstudiante();
             fCEstudiante.ShowDialog();
         }
+
+        private void datosGeneralesToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FConsutarUsuario fCUsuario = new FConsutarUsuario();
+            fCUsuario.ShowDialog();
+
+        }
     }
 }

@@ -105,6 +105,21 @@ namespace Inscripcion2
 
         }
 
+        private void FConsultaTutor_Load(object sender, EventArgs e)
+        {
+            valorparametro = "";
+            vtieneparametro = 0;
+            Program.vidTutor = 0;
+            MostrarDatos();
+            tbBuscar.Focus();
+
+        }
+
+        private void DGVDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         public FConsultaTutor()
         {
             InitializeComponent();

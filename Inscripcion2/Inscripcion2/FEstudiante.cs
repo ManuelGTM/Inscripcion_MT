@@ -72,17 +72,13 @@ namespace Inscripcion2
             Program.nuevo = false;
             Program.modificar = false;
             HabilitaBotones();
-
-            string vparametro = Program.vidTutor.ToString();
+            
+            tbIdTutor.Items.Clear();
             CNTutor cnTutor = new CNTutor();
-            DataTable dt = new DataTable();
-            dt = cnTutor.ObtenerTutor(vparametro);
-            tbIdTutor.DataSource = cnTutor.ObtenerTutor(vparametro);
-
-            foreach(DataRow row in dt.Rows)
-            {
-                tbIdTutor.Items.Add(row["Nombre"].ToString());
-            }
+            DataRowCollection dt = cnTutor.ObtenerTutor("").Rows;
+            tbIdTutor.DataSource = cnTutor.ObtenerTutor("");
+            tbIdTutor.DisplayMember = cnTutor.ObtenerTutor("").Columns[1].ToString();
+            tbIdTutor.ValueMember = cnTutor.ObtenerTutor("").Columns[0].ToString();
 
         }
         

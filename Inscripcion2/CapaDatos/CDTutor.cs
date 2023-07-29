@@ -60,8 +60,8 @@ namespace CapaDatos
                 micomando.Parameters.AddWithValue("@pIdTutor", objTutor._IdTutor);
                 micomando.Parameters.AddWithValue("@pNombre", objTutor._Nombre);
                 micomando.Parameters.AddWithValue("@pApellidos", objTutor._Apellidos);
-                micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
                 micomando.Parameters.AddWithValue("@pTelefono", objTutor._Telefono);
+                micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
                 micomando.Parameters.AddWithValue("@pDireccion", objTutor._Direccion);
                 micomando.Parameters.AddWithValue("@pEstado", objTutor._Estado);
 
@@ -101,8 +101,8 @@ namespace CapaDatos
                 micomando.Parameters.AddWithValue("@pIdTutor", objTutor._IdTutor);
                 micomando.Parameters.AddWithValue("@pNombre", objTutor._Nombre);
                 micomando.Parameters.AddWithValue("@pApellidos", objTutor._Apellidos);
-                micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
                 micomando.Parameters.AddWithValue("@pTelefono", objTutor._Telefono);
+                micomando.Parameters.AddWithValue("@pCedula", objTutor._Cedula);
                 micomando.Parameters.AddWithValue("@pDireccion", objTutor._Direccion);
                 micomando.Parameters.AddWithValue("@pEstado", objTutor._Estado);
 

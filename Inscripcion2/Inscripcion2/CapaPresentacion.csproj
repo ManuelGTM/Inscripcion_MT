@@ -119,11 +119,17 @@
     <EmbeddedResource Include="FBusquedaTutor.resx">
       <DependentUpon>FBusquedaTutor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FBusquedaUsuario.resx">
+      <DependentUpon>FBusquedaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FConsultaEstudiante.resx">
       <DependentUpon>FConsultaEstudiante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FConsultaTutor.resx">
       <DependentUpon>FConsultaTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsutarUsuario.resx">
+      <DependentUpon>FConsutarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FEstudiante.resx">
       <DependentUpon>FEstudiante.cs</DependentUpon>

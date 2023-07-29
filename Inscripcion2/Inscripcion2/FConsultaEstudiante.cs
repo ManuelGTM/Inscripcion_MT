@@ -84,6 +84,16 @@ namespace Inscripcion2
                 indice = DGVDatos.CurrentRow.Index;
         }
 
+        private void FConsultaEstudiante_Load(object sender, EventArgs e)
+        {
+            valorparametro = "";
+            vtieneparametro = 0;
+            Program.vidEstudiante = 0;
+            MostrarDatos();
+            tbBuscar.Focus();
+
+        }
+
         private void BAnterior_Click(object sender, EventArgs e)
         {
 

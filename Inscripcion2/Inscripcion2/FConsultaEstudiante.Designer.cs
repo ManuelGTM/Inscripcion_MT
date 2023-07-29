@@ -32,12 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.BBuscarDato = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbBuscar = new System.Windows.Forms.TextBox();
-            this.DGVDatos = new System.Windows.Forms.DataGridView();
+            this.LCantEstudiantes = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.BUltimo = new System.Windows.Forms.Button();
             this.BAnterior = new System.Windows.Forms.Button();
@@ -45,7 +40,12 @@
             this.BSiguiente = new System.Windows.Forms.Button();
             this.BImprimir = new System.Windows.Forms.Button();
             this.BPrimero = new System.Windows.Forms.Button();
-            this.LCantEstudiantes = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.BBuscarDato = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.DGVDatos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -95,68 +95,14 @@
             this.panel3.Size = new System.Drawing.Size(1072, 64);
             this.panel3.TabIndex = 1;
             // 
-            // panel4
+            // LCantEstudiantes
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.BBuscarDato);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.tbBuscar);
-            this.panel4.Location = new System.Drawing.Point(0, 67);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1075, 38);
-            this.panel4.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(3, 76);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1069, 45);
-            this.panel5.TabIndex = 1;
-            // 
-            // BBuscarDato
-            // 
-            this.BBuscarDato.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BBuscarDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BBuscarDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BBuscarDato.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BBuscarDato.Location = new System.Drawing.Point(661, 5);
-            this.BBuscarDato.Name = "BBuscarDato";
-            this.BBuscarDato.Size = new System.Drawing.Size(74, 26);
-            this.BBuscarDato.TabIndex = 13;
-            this.BBuscarDato.Text = "Consultar";
-            this.BBuscarDato.UseVisualStyleBackColor = false;
-            this.BBuscarDato.Click += new System.EventHandler(this.BBuscarDato_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(199, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(180, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Digite el dato a consultar";
-            // 
-            // tbBuscar
-            // 
-            this.tbBuscar.Location = new System.Drawing.Point(385, 9);
-            this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(270, 20);
-            this.tbBuscar.TabIndex = 12;
-            // 
-            // DGVDatos
-            // 
-            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVDatos.Location = new System.Drawing.Point(12, 127);
-            this.DGVDatos.Name = "DGVDatos";
-            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVDatos.Size = new System.Drawing.Size(1049, 344);
-            this.DGVDatos.TabIndex = 3;
-            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
+            this.LCantEstudiantes.AutoSize = true;
+            this.LCantEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LCantEstudiantes.Location = new System.Drawing.Point(620, 32);
+            this.LCantEstudiantes.Name = "LCantEstudiantes";
+            this.LCantEstudiantes.Size = new System.Drawing.Size(0, 16);
+            this.LCantEstudiantes.TabIndex = 35;
             // 
             // label5
             // 
@@ -249,14 +195,69 @@
             this.BPrimero.UseVisualStyleBackColor = false;
             this.BPrimero.Click += new System.EventHandler(this.BPrimero_Click);
             // 
-            // LCantEstudiantes
+            // panel4
             // 
-            this.LCantEstudiantes.AutoSize = true;
-            this.LCantEstudiantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LCantEstudiantes.Location = new System.Drawing.Point(620, 32);
-            this.LCantEstudiantes.Name = "LCantEstudiantes";
-            this.LCantEstudiantes.Size = new System.Drawing.Size(0, 16);
-            this.LCantEstudiantes.TabIndex = 35;
+            this.panel4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.BBuscarDato);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.tbBuscar);
+            this.panel4.Location = new System.Drawing.Point(0, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1075, 38);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(3, 76);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1069, 45);
+            this.panel5.TabIndex = 1;
+            // 
+            // BBuscarDato
+            // 
+            this.BBuscarDato.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BBuscarDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BBuscarDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBuscarDato.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BBuscarDato.Location = new System.Drawing.Point(661, 5);
+            this.BBuscarDato.Name = "BBuscarDato";
+            this.BBuscarDato.Size = new System.Drawing.Size(74, 26);
+            this.BBuscarDato.TabIndex = 13;
+            this.BBuscarDato.Text = "Consultar";
+            this.BBuscarDato.UseVisualStyleBackColor = false;
+            this.BBuscarDato.Click += new System.EventHandler(this.BBuscarDato_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(199, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(180, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Digite el dato a consultar";
+            // 
+            // tbBuscar
+            // 
+            this.tbBuscar.Location = new System.Drawing.Point(385, 9);
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Size = new System.Drawing.Size(270, 20);
+            this.tbBuscar.TabIndex = 12;
+            this.tbBuscar.TextChanged += new System.EventHandler(this.BBuscarDato_Click);
+            // 
+            // DGVDatos
+            // 
+            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVDatos.Location = new System.Drawing.Point(12, 127);
+            this.DGVDatos.Name = "DGVDatos";
+            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVDatos.Size = new System.Drawing.Size(1049, 344);
+            this.DGVDatos.TabIndex = 3;
+            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
             // 
             // FConsultaEstudiante
             // 
@@ -274,6 +275,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FConsultaEstudiante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FConsultaEstudiante_FormClosing);
+            this.Load += new System.EventHandler(this.FConsultaEstudiante_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

@@ -163,7 +163,7 @@
             // datosGeneralesToolStripMenuItem
             // 
             this.datosGeneralesToolStripMenuItem.Name = "datosGeneralesToolStripMenuItem";
-            this.datosGeneralesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.datosGeneralesToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.datosGeneralesToolStripMenuItem.Text = "&Datos generales ";
             this.datosGeneralesToolStripMenuItem.ToolTipText = "Vizualizar e imprimir los datos generales del estudiante ";
             this.datosGeneralesToolStripMenuItem.Click += new System.EventHandler(this.datosGeneralesToolStripMenuItem_Click);
@@ -196,9 +196,10 @@
             // datosGeneralesToolStripMenuItem3
             // 
             this.datosGeneralesToolStripMenuItem3.Name = "datosGeneralesToolStripMenuItem3";
-            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(161, 22);
+            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.datosGeneralesToolStripMenuItem3.Text = "Datos &Generales ";
             this.datosGeneralesToolStripMenuItem3.ToolTipText = "Vizualizar e imprimir los datos generales del usuario";
+            this.datosGeneralesToolStripMenuItem3.Click += new System.EventHandler(this.datosGeneralesToolStripMenuItem3_Click);
             // 
             // toolStripSeparator1
             // 
