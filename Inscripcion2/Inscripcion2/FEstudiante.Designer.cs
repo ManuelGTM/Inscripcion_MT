@@ -358,6 +358,8 @@
             this.tbIdTutor.Name = "tbIdTutor";
             this.tbIdTutor.Size = new System.Drawing.Size(121, 28);
             this.tbIdTutor.TabIndex = 56;
+            this.tbIdTutor.SelectedIndexChanged += new System.EventHandler(this.tbIdTutor_SelectedIndexChanged);
+            this.tbIdTutor.TextChanged += new System.EventHandler(this.tbIdTutor_TextChanged);
             // 
             // FEstudiante
             // 

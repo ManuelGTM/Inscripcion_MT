@@ -22,3 +22,11 @@ C:\Users\MT\workbench\Miproyecto\Inscripcion_MT2\Inscripcion_MT\Inscripcion2\Cap
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\MT\workbench\Miproyecto\Inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\bin\Debug\CapaDatos.mdf
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\bin\Debug\CapaDatos_log.ldf
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\rapto\Workbench\Miproyecto\inscripcion_MT2\Inscripcion_MT\Inscripcion2\CapaDatos\obj\Debug\CapaDatos.pdb

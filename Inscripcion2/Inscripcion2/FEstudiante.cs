@@ -182,6 +182,15 @@ namespace Inscripcion2
 
         }
 
+        private void tbIdTutor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbIdTutor_TextChanged(object sender, EventArgs e)
+        {
+        }
+
         private void BGuardar_Click(object sender, EventArgs e)
         {
             if (tbNombre.Text == String.Empty)
@@ -232,9 +241,10 @@ namespace Inscripcion2
                     
                    try
                     {
-                      int Tutor = Convert.ToInt32(tbIdTutor.Text.ToString());
+                        int Tutor = Convert.ToInt32(tbIdTutor.SelectedValue.ToString());
+
                       mensaje = CNEstudiante.InsertarEstudiante(tbNombre.Text, tbApellido.Text, Tutor, tbSexo.Text,tbFechaNacimiento.Text, tbDireccion.Text, CbEstado.Text);
-                      MessageBox.Show("Los datos han sido insertados");
+                      MessageBox.Show("Los datos han sido insertados" + Tutor.ToString());
                     }catch(Exception)
                     {
                         MessageBox.Show("Error:");
@@ -244,7 +254,7 @@ namespace Inscripcion2
                 {  
                    try
                     {
-                      int Tutor = Convert.ToInt32(tbIdTutor.Text.ToString());
+                      int Tutor = Convert.ToInt32(tbIdTutor.SelectedValue.ToString());
                       mensaje = CNEstudiante.ActualizarEstudiante(Program.vidEstudiante, tbNombre.Text, tbApellido.Text, Tutor, tbSexo.Text, tbFechaNacimiento.Text, tbDireccion.Text, CbEstado.Text);
                       MessageBox.Show("Los datos han sido actualizados");
                     }catch(Exception)

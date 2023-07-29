@@ -101,7 +101,7 @@
             // estudianteToolStripMenuItem
             // 
             this.estudianteToolStripMenuItem.Name = "estudianteToolStripMenuItem";
-            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.estudianteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.estudianteToolStripMenuItem.Text = "&Estudiante";
             this.estudianteToolStripMenuItem.ToolTipText = "Crear, modificar los datos del estudiante";
             this.estudianteToolStripMenuItem.Click += new System.EventHandler(this.estudianteToolStripMenuItem_Click);
@@ -109,7 +109,7 @@
             // tutorToolStripMenuItem
             // 
             this.tutorToolStripMenuItem.Name = "tutorToolStripMenuItem";
-            this.tutorToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.tutorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tutorToolStripMenuItem.Text = "&Tutor";
             this.tutorToolStripMenuItem.ToolTipText = "Crear, modificar los datos del Tutor";
             this.tutorToolStripMenuItem.Click += new System.EventHandler(this.tutorToolStripMenuItem_Click);
@@ -117,7 +117,7 @@
             // periodoToolStripMenuItem
             // 
             this.periodoToolStripMenuItem.Name = "periodoToolStripMenuItem";
-            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.periodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.periodoToolStripMenuItem.Text = "&Usuario";
             this.periodoToolStripMenuItem.ToolTipText = "Crear, modificar los datos del Usuario";
             this.periodoToolStripMenuItem.Click += new System.EventHandler(this.periodoToolStripMenuItem_Click);
@@ -134,7 +134,7 @@
             // inscripcionToolStripMenuItem
             // 
             this.inscripcionToolStripMenuItem.Name = "inscripcionToolStripMenuItem";
-            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.inscripcionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.inscripcionToolStripMenuItem.Text = "&Inscripcion";
             this.inscripcionToolStripMenuItem.ToolTipText = "Realizar el proceso de inscripcion";
             this.inscripcionToolStripMenuItem.Click += new System.EventHandler(this.inscripcionToolStripMenuItem_Click);
@@ -196,7 +196,7 @@
             // datosGeneralesToolStripMenuItem3
             // 
             this.datosGeneralesToolStripMenuItem3.Name = "datosGeneralesToolStripMenuItem3";
-            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.datosGeneralesToolStripMenuItem3.Size = new System.Drawing.Size(161, 22);
             this.datosGeneralesToolStripMenuItem3.Text = "Datos &Generales ";
             this.datosGeneralesToolStripMenuItem3.ToolTipText = "Vizualizar e imprimir los datos generales del usuario";
             this.datosGeneralesToolStripMenuItem3.Click += new System.EventHandler(this.datosGeneralesToolStripMenuItem3_Click);
@@ -372,7 +372,7 @@
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(326, 17);
             this.toolStripStatusLabel2.Spring = true;
-            this.toolStripStatusLabel2.Text = "Copyright por MT, FE, AA, 2022, La Vega";
+            this.toolStripStatusLabel2.Text = "Copyright por MT, 2023, La Vega";
             this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 
             // toolStripStatusLabel4
