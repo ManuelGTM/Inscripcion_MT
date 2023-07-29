@@ -22,7 +22,8 @@ namespace CapaNegocio
             objUsuario._Nivel = Nivel;
             objUsuario._Estado = Estado;
 
-            return "";
+            return objUsuario.InsertarUsuario(objUsuario);
+
         }
 
         public static string ActualizarUsuario(int IdUsuario, string Usuario, string Clave, int Nivel, string Estado)
@@ -35,7 +36,7 @@ namespace CapaNegocio
             objUsuario._Nivel = Nivel;
             objUsuario._Estado = Estado;
 
-            return "";
+            return objUsuario.ActualizarUsuario(objUsuario);
         }
 
         public DataTable ObtenerUsuario(string miparametro)

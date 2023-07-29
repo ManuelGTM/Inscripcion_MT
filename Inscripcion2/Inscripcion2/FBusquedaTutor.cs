@@ -27,7 +27,7 @@ namespace Inscripcion2
         {
             valorparametro = "";
             vtieneparametro = 0;
-            Program.vidEstudiante = 0;
+            Program.vidTutor = 0;
             MostrarDatos();
             tbBuscar.Focus();
                 
@@ -68,7 +68,7 @@ namespace Inscripcion2
              if(DGVDatos.CurrentRow != null)
             {
                 Program.modificar = true;
-                Program.vidEstudiante = Convert.ToInt32(DGVDatos.CurrentRow.Cells[0].Value);
+                Program.vidTutor = Convert.ToInt32(DGVDatos.CurrentRow.Cells[0].Value);
                 Close();
             }
 
@@ -138,6 +138,11 @@ namespace Inscripcion2
                 valorparametro = "";
             }
             MostrarDatos();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 

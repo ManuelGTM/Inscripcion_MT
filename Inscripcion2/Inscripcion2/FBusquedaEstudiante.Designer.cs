@@ -32,19 +32,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.DGVDatos = new System.Windows.Forms.DataGridView();
-            this.capaDatosDataSet = new Inscripcion2.CapaDatosDataSet();
-            this.capaDatosDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbBuscar = new System.Windows.Forms.TextBox();
-            this.BBuscarDato = new System.Windows.Forms.Button();
+            this.BAceptar = new System.Windows.Forms.Button();
+            this.BCancelar = new System.Windows.Forms.Button();
             this.BUltimo = new System.Windows.Forms.Button();
             this.BPrimero = new System.Windows.Forms.Button();
             this.BSiguiente = new System.Windows.Forms.Button();
             this.BAnterior = new System.Windows.Forms.Button();
-            this.BAceptar = new System.Windows.Forms.Button();
-            this.BCancelar = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.BBuscarDato = new System.Windows.Forms.Button();
+            this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.DGVDatos = new System.Windows.Forms.DataGridView();
+            this.capaDatosDataSet = new Inscripcion2.CapaDatosDataSet();
+            this.capaDatosDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,71 +86,29 @@
             this.panel2.Size = new System.Drawing.Size(1165, 56);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // BAceptar
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel3.Controls.Add(this.BBuscarDato);
-            this.panel3.Controls.Add(this.tbBuscar);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel3.Location = new System.Drawing.Point(0, 51);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1165, 42);
-            this.panel3.TabIndex = 2;
+            this.BAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BAceptar.Location = new System.Drawing.Point(1066, 14);
+            this.BAceptar.Name = "BAceptar";
+            this.BAceptar.Size = new System.Drawing.Size(68, 30);
+            this.BAceptar.TabIndex = 6;
+            this.BAceptar.Text = "Aceptar";
+            this.BAceptar.UseVisualStyleBackColor = true;
+            this.BAceptar.Click += new System.EventHandler(this.BAceptar_Click);
             // 
-            // DGVDatos
+            // BCancelar
             // 
-            this.DGVDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVDatos.Location = new System.Drawing.Point(12, 99);
-            this.DGVDatos.Name = "DGVDatos";
-            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVDatos.Size = new System.Drawing.Size(1140, 369);
-            this.DGVDatos.TabIndex = 3;
-            this.DGVDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellContentClick);
-            this.DGVDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellDoubleClick);
-            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
-            // 
-            // capaDatosDataSet
-            // 
-            this.capaDatosDataSet.DataSetName = "CapaDatosDataSet";
-            this.capaDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // capaDatosDataSetBindingSource
-            // 
-            this.capaDatosDataSetBindingSource.DataSource = this.capaDatosDataSet;
-            this.capaDatosDataSetBindingSource.Position = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(194, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(169, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Digite el dato a buscar";
-            // 
-            // tbBuscar
-            // 
-            this.tbBuscar.Location = new System.Drawing.Point(369, 11);
-            this.tbBuscar.Name = "tbBuscar";
-            this.tbBuscar.Size = new System.Drawing.Size(270, 20);
-            this.tbBuscar.TabIndex = 0;
-            // 
-            // BBuscarDato
-            // 
-            this.BBuscarDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BBuscarDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BBuscarDato.Location = new System.Drawing.Point(655, 5);
-            this.BBuscarDato.Name = "BBuscarDato";
-            this.BBuscarDato.Size = new System.Drawing.Size(61, 30);
-            this.BBuscarDato.TabIndex = 5;
-            this.BBuscarDato.Text = "Buscar";
-            this.BBuscarDato.UseVisualStyleBackColor = true;
-            this.BBuscarDato.Click += new System.EventHandler(this.BBuscarDato_Click);
+            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCancelar.Location = new System.Drawing.Point(969, 14);
+            this.BCancelar.Name = "BCancelar";
+            this.BCancelar.Size = new System.Drawing.Size(73, 30);
+            this.BCancelar.TabIndex = 7;
+            this.BCancelar.Text = "Cancelar";
+            this.BCancelar.UseVisualStyleBackColor = true;
+            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BUltimo
             // 
@@ -204,29 +162,73 @@
             this.BAnterior.UseVisualStyleBackColor = true;
             this.BAnterior.Click += new System.EventHandler(this.BAnterior_Click);
             // 
-            // BAceptar
+            // panel3
             // 
-            this.BAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BAceptar.Location = new System.Drawing.Point(1066, 14);
-            this.BAceptar.Name = "BAceptar";
-            this.BAceptar.Size = new System.Drawing.Size(68, 30);
-            this.BAceptar.TabIndex = 6;
-            this.BAceptar.Text = "Aceptar";
-            this.BAceptar.UseVisualStyleBackColor = true;
-            this.BAceptar.Click += new System.EventHandler(this.BAceptar_Click);
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel3.Controls.Add(this.BBuscarDato);
+            this.panel3.Controls.Add(this.tbBuscar);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel3.Location = new System.Drawing.Point(0, 51);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1165, 42);
+            this.panel3.TabIndex = 2;
             // 
-            // BCancelar
+            // BBuscarDato
             // 
-            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCancelar.Location = new System.Drawing.Point(969, 14);
-            this.BCancelar.Name = "BCancelar";
-            this.BCancelar.Size = new System.Drawing.Size(73, 30);
-            this.BCancelar.TabIndex = 7;
-            this.BCancelar.Text = "Cancelar";
-            this.BCancelar.UseVisualStyleBackColor = true;
-            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
+            this.BBuscarDato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BBuscarDato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBuscarDato.Location = new System.Drawing.Point(655, 5);
+            this.BBuscarDato.Name = "BBuscarDato";
+            this.BBuscarDato.Size = new System.Drawing.Size(61, 30);
+            this.BBuscarDato.TabIndex = 5;
+            this.BBuscarDato.Text = "Buscar";
+            this.BBuscarDato.UseVisualStyleBackColor = true;
+            this.BBuscarDato.Click += new System.EventHandler(this.BBuscarDato_Click);
+            // 
+            // tbBuscar
+            // 
+            this.tbBuscar.Location = new System.Drawing.Point(369, 11);
+            this.tbBuscar.Name = "tbBuscar";
+            this.tbBuscar.Size = new System.Drawing.Size(270, 20);
+            this.tbBuscar.TabIndex = 0;
+            this.tbBuscar.TextChanged += new System.EventHandler(this.BBuscarDato_Click);
+            this.tbBuscar.Resize += new System.EventHandler(this.tbBuscar_Resize);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(194, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 16);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Digite el dato a buscar";
+            // 
+            // DGVDatos
+            // 
+            this.DGVDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DGVDatos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVDatos.Location = new System.Drawing.Point(12, 99);
+            this.DGVDatos.Name = "DGVDatos";
+            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVDatos.Size = new System.Drawing.Size(1140, 369);
+            this.DGVDatos.TabIndex = 3;
+            this.DGVDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellContentClick);
+            this.DGVDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellDoubleClick);
+            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
+            // 
+            // capaDatosDataSet
+            // 
+            this.capaDatosDataSet.DataSetName = "CapaDatosDataSet";
+            this.capaDatosDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // capaDatosDataSetBindingSource
+            // 
+            this.capaDatosDataSetBindingSource.DataSource = this.capaDatosDataSet;
+            this.capaDatosDataSetBindingSource.Position = 0;
             // 
             // FBusquedaEstudiante
             // 

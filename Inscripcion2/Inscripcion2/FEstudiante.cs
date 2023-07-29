@@ -44,8 +44,8 @@ namespace Inscripcion2
             tbIdEstudiante.Clear();
             tbNombre.Clear();
             tbApellido.Clear();
-            tbIdTutor.Clear();
-            tbSexo.Clear();
+            tbIdTutor.SelectedItem = 0;
+            tbSexo.SelectedItem = 0;
             tbFechaNacimiento.Clear();
             tbDireccion.Clear();
             CbEstado.SelectedItem = 0;
@@ -64,13 +64,25 @@ namespace Inscripcion2
 
             if (Program.nuevo)
                 CbEstado.SelectedIndex = 0;
+                tbSexo.SelectedIndex = 0;
         }
 
         private void FEstudiante_Load(object sender, EventArgs e)
         {
             Program.nuevo = false;
             Program.modificar = false;
-           HabilitaBotones();
+            HabilitaBotones();
+
+            string vparametro = Program.vidTutor.ToString();
+            CNTutor cnTutor = new CNTutor();
+            DataTable dt = new DataTable();
+            dt = cnTutor.ObtenerTutor(vparametro);
+            tbIdTutor.DataSource = cnTutor.ObtenerTutor(vparametro);
+
+            foreach(DataRow row in dt.Rows)
+            {
+                tbIdTutor.Items.Add(row["Nombre"].ToString());
+            }
 
         }
         
@@ -129,7 +141,7 @@ namespace Inscripcion2
         }
         public void RecuperaDatos()
         {
-            string vparametro = Program.vidTutor.ToString();
+            string vparametro = Program.vidEstudiante.ToString();
             CNEstudiante cnEstudiante = new CNEstudiante();
             DataTable dt = new DataTable();
             dt = cnEstudiante.ObtenerEstudiante(vparametro);
@@ -161,6 +173,16 @@ namespace Inscripcion2
                 LimpiaObjetos();
                 BBuscar.Focus();
             }
+
+        }
+
+        private void tbSexo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FEstudiante_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
         }
 

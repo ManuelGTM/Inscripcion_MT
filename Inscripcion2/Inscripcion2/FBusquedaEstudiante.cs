@@ -141,6 +141,11 @@ namespace Inscripcion2
             BAceptar_Click(sender, e);
         }
 
+        private void tbBuscar_Resize(object sender, EventArgs e)
+        {
+
+        }
+
         private void MostrarDatos()
         {
             valorparametro = tbBuscar.Text.Trim();

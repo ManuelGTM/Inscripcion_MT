@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.DGVDatos = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.BAceptar = new System.Windows.Forms.Button();
+            this.BCancelar = new System.Windows.Forms.Button();
             this.BUltimo = new System.Windows.Forms.Button();
             this.BPrimero = new System.Windows.Forms.Button();
             this.BSiguiente = new System.Windows.Forms.Button();
             this.BAnterior = new System.Windows.Forms.Button();
-            this.BAceptar = new System.Windows.Forms.Button();
-            this.BCancelar = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.BBuscarDato = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.tbBuscar = new System.Windows.Forms.TextBox();
+            this.DGVDatos = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -56,6 +56,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1051, 48);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(460, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Busqueda de Tutor";
             // 
             // panel2
             // 
@@ -71,51 +82,31 @@
             this.panel2.Size = new System.Drawing.Size(1051, 56);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // BAceptar
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.panel3.Controls.Add(this.BBuscarDato);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.tbBuscar);
-            this.panel3.Location = new System.Drawing.Point(0, 46);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1051, 44);
-            this.panel3.TabIndex = 1;
+            this.BAceptar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BAceptar.Location = new System.Drawing.Point(960, 13);
+            this.BAceptar.Name = "BAceptar";
+            this.BAceptar.Size = new System.Drawing.Size(68, 30);
+            this.BAceptar.TabIndex = 14;
+            this.BAceptar.Text = "Aceptar";
+            this.BAceptar.UseVisualStyleBackColor = false;
+            this.BAceptar.Click += new System.EventHandler(this.BAceptar_Click);
             // 
-            // label1
+            // BCancelar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(460, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Busqueda de Tutor";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(223, 14);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(164, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Digite el dato a buscar";
-            // 
-            // DGVDatos
-            // 
-            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGVDatos.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DGVDatos.Location = new System.Drawing.Point(12, 96);
-            this.DGVDatos.Name = "DGVDatos";
-            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGVDatos.Size = new System.Drawing.Size(1027, 407);
-            this.DGVDatos.TabIndex = 2;
-            this.DGVDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellDoubleClick);
-            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
+            this.BCancelar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCancelar.Location = new System.Drawing.Point(863, 13);
+            this.BCancelar.Name = "BCancelar";
+            this.BCancelar.Size = new System.Drawing.Size(73, 30);
+            this.BCancelar.TabIndex = 15;
+            this.BCancelar.Text = "Cancelar";
+            this.BCancelar.UseVisualStyleBackColor = false;
+            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BUltimo
             // 
@@ -173,31 +164,16 @@
             this.BAnterior.UseVisualStyleBackColor = false;
             this.BAnterior.Click += new System.EventHandler(this.BAnterior_Click);
             // 
-            // BAceptar
+            // panel3
             // 
-            this.BAceptar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BAceptar.Location = new System.Drawing.Point(960, 13);
-            this.BAceptar.Name = "BAceptar";
-            this.BAceptar.Size = new System.Drawing.Size(68, 30);
-            this.BAceptar.TabIndex = 14;
-            this.BAceptar.Text = "Aceptar";
-            this.BAceptar.UseVisualStyleBackColor = false;
-            this.BAceptar.Click += new System.EventHandler(this.BAceptar_Click);
-            // 
-            // BCancelar
-            // 
-            this.BCancelar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCancelar.Location = new System.Drawing.Point(863, 13);
-            this.BCancelar.Name = "BCancelar";
-            this.BCancelar.Size = new System.Drawing.Size(73, 30);
-            this.BCancelar.TabIndex = 15;
-            this.BCancelar.Text = "Cancelar";
-            this.BCancelar.UseVisualStyleBackColor = false;
-            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.panel3.Controls.Add(this.BBuscarDato);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.tbBuscar);
+            this.panel3.Location = new System.Drawing.Point(0, 46);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1051, 44);
+            this.panel3.TabIndex = 1;
             // 
             // BBuscarDato
             // 
@@ -213,12 +189,38 @@
             this.BBuscarDato.UseVisualStyleBackColor = false;
             this.BBuscarDato.Click += new System.EventHandler(this.BBuscarDato_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(223, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(164, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Digite el dato a buscar";
+            // 
             // tbBuscar
             // 
             this.tbBuscar.Location = new System.Drawing.Point(404, 13);
             this.tbBuscar.Name = "tbBuscar";
             this.tbBuscar.Size = new System.Drawing.Size(270, 20);
             this.tbBuscar.TabIndex = 6;
+            this.tbBuscar.TextChanged += new System.EventHandler(this.BBuscarDato_Click);
+            // 
+            // DGVDatos
+            // 
+            this.DGVDatos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.DGVDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGVDatos.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DGVDatos.Location = new System.Drawing.Point(12, 96);
+            this.DGVDatos.Name = "DGVDatos";
+            this.DGVDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DGVDatos.Size = new System.Drawing.Size(1027, 407);
+            this.DGVDatos.TabIndex = 2;
+            this.DGVDatos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVDatos_CellDoubleClick);
+            this.DGVDatos.CurrentCellChanged += new System.EventHandler(this.DGVDatos_CurrentCellChanged);
             // 
             // FBusquedaTutor
             // 

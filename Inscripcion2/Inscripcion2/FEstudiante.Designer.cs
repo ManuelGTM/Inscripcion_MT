@@ -31,6 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.MEstudiante = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.BCancelar = new System.Windows.Forms.Button();
             this.BNuevo = new System.Windows.Forms.Button();
             this.BSalir = new System.Windows.Forms.Button();
             this.BEditar = new System.Windows.Forms.Button();
@@ -43,16 +44,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbIdEstudiante = new System.Windows.Forms.TextBox();
-            this.tbIdTutor = new System.Windows.Forms.TextBox();
             this.tbNombre = new System.Windows.Forms.TextBox();
-            this.tbSexo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbFechaNacimiento = new System.Windows.Forms.TextBox();
             this.tbApellido = new System.Windows.Forms.TextBox();
             this.tbDireccion = new System.Windows.Forms.TextBox();
-            this.BCancelar = new System.Windows.Forms.Button();
+            this.tbSexo = new System.Windows.Forms.ComboBox();
+            this.tbIdTutor = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +88,19 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(869, 100);
             this.panel2.TabIndex = 1;
+            // 
+            // BCancelar
+            // 
+            this.BCancelar.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BCancelar.Location = new System.Drawing.Point(504, 42);
+            this.BCancelar.Name = "BCancelar";
+            this.BCancelar.Size = new System.Drawing.Size(90, 33);
+            this.BCancelar.TabIndex = 10;
+            this.BCancelar.Text = "Cancelar";
+            this.BCancelar.UseVisualStyleBackColor = false;
+            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
             // 
             // BNuevo
             // 
@@ -246,15 +259,6 @@
             this.tbIdEstudiante.Size = new System.Drawing.Size(109, 26);
             this.tbIdEstudiante.TabIndex = 39;
             // 
-            // tbIdTutor
-            // 
-            this.tbIdTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbIdTutor.Location = new System.Drawing.Point(168, 308);
-            this.tbIdTutor.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbIdTutor.Name = "tbIdTutor";
-            this.tbIdTutor.Size = new System.Drawing.Size(216, 26);
-            this.tbIdTutor.TabIndex = 38;
-            // 
             // tbNombre
             // 
             this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -263,15 +267,6 @@
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(216, 26);
             this.tbNombre.TabIndex = 37;
-            // 
-            // tbSexo
-            // 
-            this.tbSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSexo.Location = new System.Drawing.Point(587, 188);
-            this.tbSexo.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.tbSexo.Name = "tbSexo";
-            this.tbSexo.Size = new System.Drawing.Size(216, 26);
-            this.tbSexo.TabIndex = 36;
             // 
             // label1
             // 
@@ -341,24 +336,35 @@
             this.tbDireccion.Size = new System.Drawing.Size(216, 54);
             this.tbDireccion.TabIndex = 49;
             // 
-            // BCancelar
+            // tbSexo
             // 
-            this.BCancelar.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.BCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BCancelar.Location = new System.Drawing.Point(504, 42);
-            this.BCancelar.Name = "BCancelar";
-            this.BCancelar.Size = new System.Drawing.Size(90, 33);
-            this.BCancelar.TabIndex = 10;
-            this.BCancelar.Text = "Cancelar";
-            this.BCancelar.UseVisualStyleBackColor = false;
-            this.BCancelar.Click += new System.EventHandler(this.BCancelar_Click);
+            this.tbSexo.BackColor = System.Drawing.SystemColors.Window;
+            this.tbSexo.FormattingEnabled = true;
+            this.tbSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.tbSexo.Location = new System.Drawing.Point(587, 193);
+            this.tbSexo.Name = "tbSexo";
+            this.tbSexo.Size = new System.Drawing.Size(130, 21);
+            this.tbSexo.TabIndex = 54;
+            this.tbSexo.SelectedIndexChanged += new System.EventHandler(this.tbSexo_SelectedIndexChanged);
+            // 
+            // tbIdTutor
+            // 
+            this.tbIdTutor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbIdTutor.FormattingEnabled = true;
+            this.tbIdTutor.Location = new System.Drawing.Point(168, 303);
+            this.tbIdTutor.Name = "tbIdTutor";
+            this.tbIdTutor.Size = new System.Drawing.Size(121, 28);
+            this.tbIdTutor.TabIndex = 56;
             // 
             // FEstudiante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 566);
+            this.Controls.Add(this.tbIdTutor);
+            this.Controls.Add(this.tbSexo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label9);
@@ -373,12 +379,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbIdEstudiante);
-            this.Controls.Add(this.tbIdTutor);
             this.Controls.Add(this.tbNombre);
-            this.Controls.Add(this.tbSexo);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FEstudiante";
@@ -386,6 +391,7 @@
             this.Text = "Mantenimiento Estudiante";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FEstudiante_FormClosing);
             this.Load += new System.EventHandler(this.FEstudiante_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.FEstudiante_KeyPress);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -411,9 +417,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbIdEstudiante;
-        private System.Windows.Forms.TextBox tbIdTutor;
         private System.Windows.Forms.TextBox tbNombre;
-        private System.Windows.Forms.TextBox tbSexo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
@@ -421,5 +425,7 @@
         private System.Windows.Forms.TextBox tbApellido;
         private System.Windows.Forms.TextBox tbDireccion;
         private System.Windows.Forms.Button BCancelar;
+        private System.Windows.Forms.ComboBox tbSexo;
+        private System.Windows.Forms.ComboBox tbIdTutor;
     }
 }
